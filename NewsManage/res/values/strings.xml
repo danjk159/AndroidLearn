@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewsManage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="LoginName">用户名</string>
+    <string name="LoginPassword">密码</string>
+	<string name="Login">登录</string>
+	<string name="Logout">退出</string>
+	<string name="DatabaseFile">/mnt/db/News.db</string>
+</resources>
