@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.newsmanage.NewsListActivity"
+            android:label="@string/title_activity_news_list" >
+        </activity>
+        <activity
+            android:name="com.example.newsmanage.UserEditActivity"
+            android:label="@string/title_activity_user_edit" >
+        </activity>
     </application>
 
 </manifest>
