@@ -15,5 +15,7 @@
     <string name="UserEdit">用户编辑</string>
     <string name="title_activity_user_edit">用户编辑</string>
     <string name="title_activity_news_add">新闻新增</string>
+    <string name="title_activity_news_card">新闻</string>
+    <string name="title_activity_news_edit">新闻编辑</string>
 
 </resources>

@@ -26,35 +26,50 @@ public final class R {
     public static final class id {
         public static final int EtName=0x7f080001;
         public static final int EtPassword=0x7f080003;
-        public static final int EtUserEditPassword=0x7f08000d;
-        public static final int NewsAdd=0x7f080012;
-        public static final int UserEdit=0x7f080013;
-        public static final int action_settings=0x7f080011;
+        public static final int EtUserEditPassword=0x7f080018;
+        public static final int NewsAdd=0x7f08001d;
+        public static final int UserEdit=0x7f08001e;
+        public static final int action_settings=0x7f08001c;
         public static final int btnLogin=0x7f080005;
         public static final int btnLogout=0x7f080004;
         public static final int btnNewsAddAdd=0x7f08000b;
         public static final int btnNewsAddCancel=0x7f08000a;
+        public static final int btnNewsCardCancel=0x7f080011;
+        public static final int btnNewsCardDelete=0x7f080012;
+        public static final int btnNewsCardEdit=0x7f080010;
+        public static final int btnNewsEditCancel=0x7f080016;
+        public static final int btnNewsEditEdit=0x7f080017;
         public static final int btnRegister=0x7f080006;
-        public static final int btnUserEditCancel=0x7f08000e;
-        public static final int btnUserEditChangePwd=0x7f08000f;
+        public static final int btnUserEditCancel=0x7f080019;
+        public static final int btnUserEditChangePwd=0x7f08001a;
         public static final int etNewsAddContext=0x7f080007;
         public static final int etNewsAddTitle=0x7f080008;
-        public static final int textView1=0x7f08000c;
+        public static final int etNewsEditContext=0x7f080013;
+        public static final int etNewsEditTitle=0x7f080014;
         public static final int tvName=0x7f080000;
         public static final int tvNewsAddUserName=0x7f080009;
+        public static final int tvNewsCardContext=0x7f08000f;
+        public static final int tvNewsCardDateTime=0x7f08000d;
+        public static final int tvNewsCardTitle=0x7f08000c;
+        public static final int tvNewsCardUserName=0x7f08000e;
+        public static final int tvNewsEditUserName=0x7f080015;
         public static final int tvPassword=0x7f080002;
-        public static final int tvUserEditName=0x7f080010;
+        public static final int tvUserEditName=0x7f08001b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_news_add=0x7f030001;
-        public static final int activity_user_edit=0x7f030002;
+        public static final int activity_news_card=0x7f030002;
+        public static final int activity_news_edit=0x7f030003;
+        public static final int activity_user_edit=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;
         public static final int news_add=0x7f070001;
-        public static final int news_list=0x7f070002;
-        public static final int user_edit=0x7f070003;
+        public static final int news_card=0x7f070002;
+        public static final int news_edit=0x7f070003;
+        public static final int news_list=0x7f070004;
+        public static final int user_edit=0x7f070005;
     }
     public static final class string {
         public static final int DatabaseFile=0x7f050007;
@@ -69,6 +84,8 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int title_activity_news_add=0x7f05000d;
+        public static final int title_activity_news_card=0x7f05000e;
+        public static final int title_activity_news_edit=0x7f05000f;
         public static final int title_activity_news_list=0x7f050008;
         public static final int title_activity_user_edit=0x7f05000c;
     }

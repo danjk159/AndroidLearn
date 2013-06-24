@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewsEditActivity" >
+
+ <EditText
+     android:id="@+id/etNewsEditContext"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/etNewsEditTitle"
+     android:layout_alignRight="@+id/etNewsEditTitle"
+     android:layout_below="@+id/etNewsEditTitle"
+     android:layout_marginTop="18dp"
+     android:ems="10"
+     android:gravity="top"
+     android:hint="新闻内容"
+     android:inputType="textMultiLine"
+     android:lines="7" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etNewsEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNewsEditUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="标题"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnNewsEditCancel"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/btnNewsEditEdit"
+        android:layout_alignBottom="@+id/btnNewsEditEdit"
+        android:layout_alignRight="@+id/etNewsEditContext"
+        android:text="取消" />
+
+    <TextView
+        android:id="@+id/tvNewsEditUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNewsEditTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnNewsEditEdit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etNewsEditContext"
+        android:layout_below="@+id/etNewsEditContext"
+        android:layout_marginTop="22dp"
+        android:text="修改" />
+
+</RelativeLayout>

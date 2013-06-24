@@ -52,4 +52,24 @@ public class NewsDAO {
 		String[] whereArgs = {u.get_id()+""};
 		db.update(newsOpenHelper.DATABASE_TABLE_NAME,initialValues,whereClause,whereArgs);
 	}
+
+	public News findBy_id(int rowid) {
+		// TODO Auto-generated method stub
+		db = newsOpenHelper.getWritableDatabase();
+		Cursor cursor=db.query(newsOpenHelper.DATABASE_TABLE_NAME,null, "_id=? ", new  String[]{rowid+""}, null, null, null);
+		cursor.moveToFirst();
+		News n=new News();
+		n.setTitle(cursor.getString(1));
+		n.setUsersName(cursor.getString(3));
+		n.setNewsDateTime(cursor.getString(2));
+		n.setContetx(cursor.getString(4));
+		n.setImgFile(cursor.getBlob(5));
+		return n;
+	}
+
+	public void delete(int rowid) {
+		// TODO Auto-generated method stub
+		db = newsOpenHelper.getWritableDatabase();
+		db.delete(newsOpenHelper.DATABASE_TABLE_NAME,"_id=?",new String[]{String.valueOf(rowid)});
+	}
 }

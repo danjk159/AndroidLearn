@@ -9,7 +9,7 @@
     tools:context=".UserEditActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvNewsCardUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -66,8 +66,8 @@
         android:id="@+id/tvUserEditName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBaseline="@+id/tvNewsCardUserName"
+        android:layout_alignBottom="@+id/tvNewsCardUserName"
         android:layout_toLeftOf="@+id/btnUserEditCancel"
         android:ems="4"
         android:text="11111"

@@ -47,11 +47,13 @@ public class NewsListActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				//cursor.move(position);
 				cursor.moveToPosition(position);
-				String str = cursor.getString(1);
-				Toast.makeText(NewsListActivity.this,str+"被点击了",
-						Toast.LENGTH_LONG).show();
+				String str = cursor.getString(0);
+				//Toast.makeText(NewsListActivity.this,str+"被点击了",Toast.LENGTH_LONG).show();
+				Intent intent=new Intent(mContext, NewsCardActivity.class);
+				intent.putExtra("rowid", str);
+				//Toast.makeText(NewsListActivity.this,intent.getStringExtra("rowid")+"被点击了",Toast.LENGTH_LONG).show();
+				startActivity(intent);
 			}
 		});
 	}

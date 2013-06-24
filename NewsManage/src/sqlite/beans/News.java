@@ -41,4 +41,8 @@ public class News {
 	public void setImgFile(byte[] imgFile) {
 		ImgFile = imgFile;
 	}
+	public void set_id(int rowid) {
+		// TODO Auto-generated method stub
+		_id=rowid;
+	}
 }

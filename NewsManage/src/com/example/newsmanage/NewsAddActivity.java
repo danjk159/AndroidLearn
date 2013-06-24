@@ -32,11 +32,11 @@ public class NewsAddActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		mContext = this;
 		setContentView(R.layout.activity_news_add);
-		tvUserName = (TextView) findViewById(R.id.tvNewsAddUserName);
+		tvUserName = (TextView) findViewById(R.id.tvNewsEditUserName);
 		tvUserName.setText("作者:"+MyPreference.getInstance(mContext).getLoginName());
 
-		etTitle = (EditText) findViewById(R.id.etNewsAddTitle);
-		etContext = (EditText) findViewById(R.id.etNewsAddContext);
+		etTitle = (EditText) findViewById(R.id.etNewsEditTitle);
+		etContext = (EditText) findViewById(R.id.etNewsEditContext);
 		btnAddNews = (Button) findViewById(R.id.btnNewsAddAdd);
 		btnCancel = (Button) findViewById(R.id.btnNewsAddCancel);
 		btnAddNews.setOnClickListener(new OnClickListener() {

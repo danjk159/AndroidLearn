@@ -34,6 +34,14 @@
             android:name="com.example.newsmanage.NewsAddActivity"
             android:label="@string/title_activity_news_add" >
         </activity>
+        <activity
+            android:name="com.example.newsmanage.NewsCardActivity"
+            android:label="@string/title_activity_news_card" >
+        </activity>
+        <activity
+            android:name="com.example.newsmanage.NewsEditActivity"
+            android:label="@string/title_activity_news_edit" >
+        </activity>
     </application>
 
 </manifest>
