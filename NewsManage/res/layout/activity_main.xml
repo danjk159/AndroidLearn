@@ -80,7 +80,6 @@
         android:layout_alignBaseline="@+id/btnLogout"
         android:layout_alignBottom="@+id/btnLogout"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible"
         android:text="注册" />
 
 

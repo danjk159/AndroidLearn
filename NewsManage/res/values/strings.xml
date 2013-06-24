@@ -9,9 +9,11 @@
     <string name="Login">登录</string>
     <string name="Logout">退出</string>
     <string name="DatabaseFile">/mnt/db/News.db</string>
-    <string name="title_activity_news_list">NewsList</string>
+    <string name="title_activity_news_list">新闻列表</string>
     <string name="NewsList">新闻列表</string>
+    <string name="NewsAdd">新闻新增</string>
     <string name="UserEdit">用户编辑</string>
-    <string name="title_activity_user_edit">UserEditActivity</string>
+    <string name="title_activity_user_edit">用户编辑</string>
+    <string name="title_activity_news_add">新闻新增</string>
 
 </resources>

@@ -9,7 +9,7 @@ import sqlite.beans.User;
 
 
 public class UsersDao {
-	UsersOpenHelper usersOpenHelper;
+	private UsersOpenHelper usersOpenHelper;
 	private SQLiteDatabase db;
 	public UsersDao(Context context) {
 		usersOpenHelper = new UsersOpenHelper(context);

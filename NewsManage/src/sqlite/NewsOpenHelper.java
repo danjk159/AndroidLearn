@@ -6,16 +6,20 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class UsersOpenHelper extends SQLiteOpenHelper {
+public class NewsOpenHelper extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION=1;
 	private static final String DATABASE_FILE_NAME="News.db";
-	public static final String DATABASE_TABLE_NAME="Users";
+	public static final String DATABASE_TABLE_NAME="News";
 	private static final String DATABASE_TABLE_CREATE="create table "+DATABASE_TABLE_NAME+
-			//"(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-			"(UserName varchar(64)," +
-			"Password varchar(64))";
+			"(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+			"Title varchar(64)," +
+			"NewsDateTime datetime," +
+			"UsersName varchar(64)," +
+			"Context varchar(255)," +
+			"ImgFile blob" +
+			")";
 	
-	public UsersOpenHelper(Context context) {
+	public NewsOpenHelper(Context context) {
 		super(context, DATABASE_FILE_NAME, null, DATABASE_VERSION);
 		// TODO Auto-generated constructor stub
 	}
@@ -31,9 +35,9 @@ public class UsersOpenHelper extends SQLiteOpenHelper {
 	}
 
 	@Override
-	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
 		// TODO Auto-generated method stub
-		Log.i("UsersManage", "UpGrade!");
+		Log.i("NewsManage", "UpGrade!");
 	}
 
 }

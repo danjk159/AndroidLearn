@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/NewsList"
+        android:id="@+id/NewsAdd"
         android:orderInCategory="100"
-        android:title="@string/NewsList"/>
+        android:title="@string/NewsAdd"/>
     <item
         android:id="@+id/UserEdit"
         android:orderInCategory="100"
