@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -22,6 +23,7 @@ public class UserEditActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mContext=this;
+		AppManager.getAppManager().addActivity(this);
 		setContentView(R.layout.activity_user_edit);
 		tvUserName = (TextView) findViewById(R.id.tvUserEditName);
 		tvUserName.setText(MyPreference.getInstance(mContext)
@@ -54,6 +56,22 @@ public class UserEditActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
 	}
-
+	//同MainActivity.java
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	//同MainActivity.java
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.Leave:
+			AppManager.getAppManager().AppExit(this);
+			break;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 }

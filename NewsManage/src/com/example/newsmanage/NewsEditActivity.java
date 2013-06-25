@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -32,7 +33,7 @@ public class NewsEditActivity extends Activity {
 		mContext = this;
 		setContentView(R.layout.activity_news_edit);
 		connectContentView();
-
+		AppManager.getAppManager().addActivity(this);
 		try {
 			rowid = Integer.parseInt(getIntent().getStringExtra("rowid"));
 		} catch (Exception e) {
@@ -108,12 +109,21 @@ public class NewsEditActivity extends Activity {
 			
 		});
 	}
-	
-	// @Override
-	// public boolean onCreateOptionsMenu(Menu menu) {
-	// // Inflate the menu; this adds items to the action bar if it is present.
-	// getMenuInflater().inflate(R.menu.news_edit, menu);
-	// return true;
-	// }
+	//同MainActivity.java
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	//同MainActivity.java
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.Leave:
+			AppManager.getAppManager().AppExit(this);
+			break;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 
 }

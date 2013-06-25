@@ -27,9 +27,9 @@ public final class R {
         public static final int EtName=0x7f080001;
         public static final int EtPassword=0x7f080003;
         public static final int EtUserEditPassword=0x7f080018;
+        public static final int Leave=0x7f08001c;
         public static final int NewsAdd=0x7f08001d;
         public static final int UserEdit=0x7f08001e;
-        public static final int action_settings=0x7f08001c;
         public static final int btnLogin=0x7f080005;
         public static final int btnLogout=0x7f080004;
         public static final int btnNewsAddAdd=0x7f08000b;
@@ -87,6 +87,7 @@ public final class R {
         public static final int title_activity_news_card=0x7f05000e;
         public static final int title_activity_news_edit=0x7f05000f;
         public static final int title_activity_news_list=0x7f050008;
+        public static final int title_activity_news_retrieve=0x7f050010;
         public static final int title_activity_user_edit=0x7f05000c;
     }
     public static final class style {

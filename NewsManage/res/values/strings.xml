@@ -17,5 +17,6 @@
     <string name="title_activity_news_add">新闻新增</string>
     <string name="title_activity_news_card">新闻</string>
     <string name="title_activity_news_edit">新闻编辑</string>
+    <string name="title_activity_news_retrieve">NewsRetrieveActivity</string>
 
 </resources>

@@ -10,6 +10,8 @@ public class NewsOpenHelper extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION=1;
 	private static final String DATABASE_FILE_NAME="News.db";
 	public static final String DATABASE_TABLE_NAME="News";
+	//_id，自增长类型，sqlite规定自增长类型只能取名_id,
+	//如没有明确自增长类型sqlite会有个隐形列rowid，具体请看相关文档
 	private static final String DATABASE_TABLE_CREATE="create table "+DATABASE_TABLE_NAME+
 			"(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
 			"Title varchar(64)," +
